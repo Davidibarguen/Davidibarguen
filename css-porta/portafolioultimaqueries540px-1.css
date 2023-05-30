@@ -1,0 +1,74 @@
+/* me diaqueris en 540px */
+.presentacion{
+    display:flex;
+ 
+   
+}
+
+.presentacion-bloqueTexto{
+ width: 50%;
+ height: 400px;
+ /* display:grid;
+ grid-template:  repeat(40,20px)/repeat(40,20px); */
+
+}
+
+
+.imagen-delcreador{
+    opacity: 1;
+    position: relative;
+    width: 50%;
+    padding-top:40px ;
+    
+}
+.imagen-delcreador img{
+    width: 200px;
+    height: 200px;
+    margin-left:75px ;
+}
+
+.proyectos-realizados-control{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    margin: 0 auto ;
+  
+   
+    justify-content: center;
+}
+.proyectos-realizados_card{
+    width: 40%;
+    height: 320px;
+}
+.proyectos-realizados_card img{
+    width: 100%;
+    margin: 0 auto;
+  
+}
+.lenguajes-que-se{
+padding: 0 70px 0 70px;
+height: 250px;
+}
+.lenguajes-que-se_control{ 
+justify-content: center;
+align-items:top ;
+margin: 0 0 40px 0;
+}
+
+.aventuras_control{
+    width: 90%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.sobreMy-control{
+    display: flex;
+}
+.sobreMy figure{
+    width: 50%;
+    margin-top: 20px;
+}
+.texto-sobremy{
+    width: 50%;
+}

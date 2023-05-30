@@ -1,0 +1,360 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+html{
+    font-size: 62.5%;
+
+}
+
+:root{
+    --color--card--:#3A496B;
+    --color--segundario--:#5D6A8F;
+    --color--terciario--:#5A4573;
+    --color--colorletra--:#9A324E;
+    --color--alternativa--:yellow;
+    --color--colorclaro--:#FFEDFF;
+    --color--otro--:#A23A27;
+    --color--fondo--: #D9D9D9;
+    --style--letra--:font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+}
+
+header{
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.703);
+    display: flex;
+    justify-content: space-between;
+}
+
+h1{ 
+    text-align: center;
+    margin: 10px;
+    font-size: 2.6rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 900;
+    color:var(--color--alternativa--) ;
+}
+
+.presentacion{
+    width: 100%;
+    height: 350px;
+    padding: 70px 0 5px 0;
+    display: flex;
+    background-color: var(--color--fondo--);
+   
+
+}
+.presentacion-bloqueTexto{
+    width: 90%;
+    height: auto;
+    justify-content: center;
+    position: relative;
+    display: grid;
+    grid-template:  repeat(12,20px)/repeat(12,20px);
+
+}
+.presentacion-hol{
+    position: relative;
+    font-size: 2.5rem;
+   writing-mode: vertical-rl;
+   transform: rotate(180deg);
+    font-weight: 900;
+    grid-column: 1/1;
+    grid-row: 6/2;
+    margin-left:5px ;
+    color: var(--color--alternativa--);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* .presentacion-hol::before{
+    content: "</";
+    color:red;
+    position: absolute;
+   top: 0;
+} */
+.presentacion-bien{
+    font-size: 2.6rem;
+    grid-column:3/10 ;
+    grid-row: 1/1;
+    justify-self: flex-start;
+    align-self: center;
+    font-weight: 900;
+    color: var(--color--alternativa--);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.presentacion-my{
+    font-size: 1.5rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   grid-column:3/9 ;
+   grid-row: 2/3;
+   color: var(--color--alternativa--);
+   font-weight: 700;
+
+}
+.presentacion-nombre{
+    grid-column: 3/6;
+    grid-row: 4/9;
+    font-size: 2.5rem;
+    color: rgb(70, 66, 66);
+}
+
+.presentacion-amante{
+    grid-column: 1/10;
+    grid-row: 9/9;
+    font-size: 2.5rem;
+    color:var(--color--colorletra--); 
+}
+.presentacion-programa{
+    grid-column:4/10;
+    grid-row: 10/10;
+    font-size: 2.5rem;
+    color:var(--color--colorletra--); 
+}
+.line{
+    width: 100%;
+    height:230px;
+    position: absolute;
+    border-top:7px solid var(--color--terciario--) ;
+    border-right:3px solid var(--color--terciario--) ;
+    grid-column:3/11;
+    grid-row: 3/5;
+}
+
+.imagen-delcreador{
+    width: 100px;
+    height: 200px;
+    opacity: 0;
+    position: absolute;
+}
+
+.lenguajes-que-se{
+    width: 100%;
+    height: 200px;
+    padding: 20px;
+    /* background-color:var(--color--segundario--); */
+    background-color:var(--color--fondo--);
+    
+}
+
+.estyloh3{
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--color--colorletra--);
+    margin-bottom: 20px;
+    font-weight: 900;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+.lenguajes-que-se_control{
+    display: flex;
+    margin: 0 auto;
+    
+    overflow: auto;
+    overflow-y: hidden;
+    height: inherit;
+}
+.lenguajes-que-se_card{
+    width: 150px;
+    height: 90px;
+    margin: 20px;
+    background-color: var(--color--card--);
+    box-shadow: 1px 1px 5px var(--color--colorclaro--);
+    border-radius: 9px;
+
+}
+.lenguajes-que-se_card img{
+   width: 120px;
+   object-fit: contain;
+   height: 70px;
+   border-radius: 9px;
+}
+.lenguajes-que-se_card p{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--color--colorclaro--);
+    vertical-align:center;
+    text-align: center;
+}
+
+.proyectos-realizados{
+    width: 100%;
+    height: auto;
+    display: grid;
+    /* background-color: var(--color--segundario--); */
+    background-color:var(--color--fondo--);
+   justify-items: center;
+}
+.proyectos-realizados_card{
+    padding: 20px;
+    width: 300px;
+    margin: 30px 0px 30px 0px;
+    height: auto;
+    display: block;
+    background-color:var(--color--card--) ;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+
+}
+
+.proyectos-realizados_card img{
+    width: 270px;
+   height:150px;
+   margin: 0 auto;
+}
+.proyectos-realizados_card a{
+    color: yellow;
+    font-size: 1.8rem;
+    display: grid;
+    text-align: center;
+   
+}
+.proyectos-realizados_card h4{
+    font-size:2.0rem;
+    color: var(--color--colorclaro--);
+}
+.proyectos-realizados_card p{
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--color--colorclaro--);
+    margin-bottom: 15px;
+}
+
+.aventuras{
+    width: 100%;
+    height:450px;
+    background-color: var(--color--fondo--);
+}
+
+.aventuras_control{
+    display:flex;
+    overflow: auto;
+    overflow-y: hidden;
+}
+
+.aventuras_card {
+   position: relative;
+    margin: 15px;
+    width: 270px;
+    height: 350px;
+    background-color: var(--color--card--);
+    box-shadow: 5px 5px 2px var(--color--segundario--);
+    border-radius: 10px;
+}
+.aventuras_card img{
+    width: 260px;
+    height: 280px;
+    border-radius: 10px;
+}
+.aventuras_card-efecto{
+    background-color:#5d6a8f65 ;
+    opacity: 1;
+    position: absolute;
+    
+}
+.aventuras_card-efecto h4{
+    font-size: 3.0rem;
+    color: var(--color--colorclaro--);
+    margin: 7px;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.aventuras_card-efecto p{
+    font-size: 2.5rem;
+    padding: 10px;
+    opacity: 0;
+    color: var(--color--colorclaro--);
+
+}
+.aventuras_card-efecto a{
+    color: var(--color--alternativa--);
+    text-decoration: none;
+    cursor: pointer;
+}
+.aventuras_card-efecto:hover{
+    cursor: pointer;
+   transform: translateY(-100px);
+}
+
+.aventuras_card-efecto p:hover{
+    opacity:1;
+}
+
+.sobreMy{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    background-color: var(--color--fondo--);
+}
+.sobreMy h2{
+    color: var(--color--colorletra--);
+    font-size: 2.6rem;
+    font-weight: 600;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+
+}
+.sobreMy-control{
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+}
+.texto-sobremy{
+    padding: 20px;
+    margin: 10px;
+    background-color: var(--color--card--);
+    box-shadow: 1px 1px 5px var(--color--terciario--);
+}
+.texto-sobremy p {
+    font-size: 2.3rem;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 30px;
+    text-align: center;
+    color: var(--color--colorclaro--);
+}
+
+.sobreMy figure{
+    width: 90%;
+    margin: 0 auto ;
+    padding: 20px;
+    height: 400px;
+    border: 1px solid var(--color--otro--);
+    box-shadow: 1px 1px 5px var(--color--terciario--);
+}
+
+.sobreMy figure img{
+    width: 70%;
+    height: 250px;
+    object-fit: contain;
+    margin: 0 auto;
+
+
+}
+
+
+footer{
+    width: 100%;
+    height: auto;
+    background-color: var(--color--card--);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer ul li{
+    color: var(--color--colorclaro--);
+    font-size: 2.0rem;
+    display: flex;
+    margin-left: 20px;
+
+}
+
+footer h4 {
+    color: var(--color--colorclaro--);
+    font-size: 1.2rem;
+    display: flex;
+    flex-wrap: wrap;
+}
