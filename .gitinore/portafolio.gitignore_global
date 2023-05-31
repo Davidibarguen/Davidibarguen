@@ -1,4 +1,4 @@
-* img-portafolio
- .jpg
- .jpeg
- .jpn
+ /img-portafolio/
+ *.jpg
+ *.jpeg
+ *.jpn
